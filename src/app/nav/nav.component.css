@@ -1,0 +1,49 @@
+
+/* .results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+  } */
+  
+  input[type="text"] {
+    border: solid 1px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 30%;
+  }
+  nav {
+    background-color: #f0f0f0; /* Light grey background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none; /* Removes the default list bullets */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; /* Displays the list items in a row */
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block; /* Makes the entire list item clickable */
+    color: black; /* Text color for the links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Removes the underline from links */
+  }
+  
+  li a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+  }
