@@ -24,11 +24,21 @@ import { LoginComponent } from './login/login.component';
     <header class="brand-name">
       <app-nav></app-nav>
     </header>
-    <section class="content">
-      <app-lazos></app-lazos>
-      <app-diademas></app-diademas>
-      <app-kits></app-kits>
-    </section>
+    <section>
+            <h2>Lazos</h2>
+            <app-lazos></app-lazos>
+        </section>
+        <section>
+            <h2>Colas</h2>
+        </section>
+        <section>
+            <h2>Diademas</h2>
+            <app-diademas></app-diademas>
+        </section>
+        <section>
+            <h2>Kits</h2>
+            <app-kits></app-kits>
+        </section>
     <!-- <app-login></app-login> -->
   </main>
 `,
