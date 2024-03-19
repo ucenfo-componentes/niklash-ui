@@ -39,7 +39,7 @@ import { LoginComponent } from './login/login.component';
             <h2>Kits</h2>
             <app-kits></app-kits>
         </section>
-    <!-- <app-login></app-login> -->
+        <app-login></app-login>
   </main>
 `,
   styleUrl: './app.component.css'

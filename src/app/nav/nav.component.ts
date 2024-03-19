@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
     <a class="navbar-brand">Niklash </a>
     <input type="text" placeholder="Tipo de Accesorio">
     <button class="primary" type="button">Buscar</button>
+    <!-- <a routerLink="/login">Login</a> -->
     <a href="/login" class="login-button">Login</a>
   </nav>
 `,

@@ -31,7 +31,8 @@ export class LoginComponent {
   password: string = '';
 
   onLogin(): void {
-    console.log('Username:', this.username, 'Password:', this.password);
+    window.alert('Login exitoso!!');
+    // console.log('Username:', this.username, 'Password:', this.password);
   }
 
 }
