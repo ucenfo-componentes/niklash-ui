@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
     <button class="primary" type="button">Buscar</button>
     <ul>
     <li><a routerLink="/login">Login</a></li>
+    <li><a routerLink="/registro">Registrate</a></li>
     </ul>
   </nav>
 `,

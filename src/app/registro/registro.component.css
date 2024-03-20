@@ -1,0 +1,69 @@
+/* General form styling */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for each form group (label + input) */
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Style for inputs and textareas */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* Style for the submit button */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #802452;
+  }
+  
+  /* Focus styles for inputs */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    form {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

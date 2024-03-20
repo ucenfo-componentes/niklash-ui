@@ -8,6 +8,7 @@ import { LazosComponent } from './lazos/lazos.component';
 import { DiademasComponent } from './diademas/diademas.component';
 import { KitsComponent } from './kits/kits.component';
 import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 @Component({
@@ -22,6 +23,7 @@ import { LoginComponent } from './login/login.component';
     DiademasComponent,
     KitsComponent,
     LoginComponent,
+    RegistroComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
