@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; 
+
 
 @Component({
   selector: 'app-nav',
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule
   ],
   template: `
   <nav>
@@ -17,8 +20,9 @@ import { CommonModule } from '@angular/common';
     </ul>
   </nav>
 `,
-  styleUrl: './nav.component.css'
+styleUrls: ['./nav.component.css'] 
 })
 export class NavComponent {
+  
 
 }
