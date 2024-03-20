@@ -9,21 +9,7 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     FormsModule
   ], 
-  template: `
-   <div class="login-container">
-      <form (ngSubmit)="onLogin()">
-        <div class="form-group">
-          <label for="username">Usuario:</label>
-          <input type="text" id="username" [(ngModel)]="username" name="username" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Clave:</label>
-          <input type="password" id="password" [(ngModel)]="password" name="password" required>
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-`,
+  templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {

@@ -1,13 +1,4 @@
-
-/* .results {
-    display: grid;
-    column-gap: 14px;
-    row-gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-    margin-top: 50px;
-    justify-content: space-around;
-  } */
-  
+ 
   input[type="text"] {
     border: solid 1px var(--primary-color);
     padding: 10px;
@@ -17,7 +8,7 @@
     width: 30%;
   }
   nav {
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #f0f0f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,11 +16,11 @@
   }
   
   ul {
-    list-style-type: none; /* Removes the default list bullets */
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex; /* Displays the list items in a row */
+    display: flex;
   }
   
   li {
