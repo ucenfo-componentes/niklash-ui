@@ -24,4 +24,11 @@
   
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('/assets/Niklash 2.png');
+  background-size:contain; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  min-height: 200vh;
+ }
