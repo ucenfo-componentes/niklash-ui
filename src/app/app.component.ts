@@ -10,6 +10,7 @@ import { DiademasComponent } from './diademas/diademas.component';
 import { KitsComponent } from './kits/kits.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
+import { RegistroItemComponent } from './registro-item/registro-item.component';
 
 
 @Component({
@@ -25,7 +26,8 @@ import { RegistroComponent } from './registro/registro.component';
     KitsComponent,
     LoginComponent,
     HttpClientModule,
-    RegistroComponent
+    RegistroComponent,
+    RegistroItemComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
