@@ -2,6 +2,7 @@ import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NavComponent } from './nav/nav.component';
 import { LazosComponent } from './lazos/lazos.component';
@@ -23,6 +24,7 @@ import { RegistroComponent } from './registro/registro.component';
     DiademasComponent,
     KitsComponent,
     LoginComponent,
+    HttpClientModule,
     RegistroComponent
   ],
   templateUrl: './app.component.html',

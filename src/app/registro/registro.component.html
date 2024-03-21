@@ -12,9 +12,26 @@
       <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
     </div>
     <div>
-      <label for="address">Dirección:</label>
-      <input type="text" id="address" [(ngModel)]="user.address" name="address">
-    </div>
+        <label for="provincia">Provincia:</label>
+        <select id="provincia"  class="big-select" [(ngModel)]="user.address.provincia" name="provincia">
+          <option *ngFor="let provincia of provincias" [value]="provincia">{{ provincia }}</option>
+        </select>
+      </div>
+    
+      <div>
+        <label for="canton">Cantón:</label>
+        <input type="text" id="canton" [(ngModel)]="user.address.canton" name="canton">
+      </div>
+    
+      <div>
+        <label for="distrito">Distrito:</label>
+        <input type="text" id="distrito" [(ngModel)]="user.address.distrito" name="distrito">
+      </div>
+    
+      <div>
+        <label for="otrasSenas">Otras señas:</label>
+        <input type="text" id="otrasSenas" [(ngModel)]="user.address.otrasSenas" name="otrasSenas">
+      </div>
     <button type="submit">Registrate</button>
   </form>
   
