@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
   ],
   template: `
   <nav>
-    <a class="navbar-brand">Niklash </a>
+    <a class="navbar-brand" routerLink="/">Niklash</a>
     <input type="text" placeholder="Tipo de Accesorio">
     <button class="primary" type="button">Buscar</button>
     <ul>

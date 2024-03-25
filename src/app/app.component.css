@@ -22,4 +22,12 @@ section h2 {
     color: #333;
     margin-top: 0;
 }
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #642bb1;
+}
   

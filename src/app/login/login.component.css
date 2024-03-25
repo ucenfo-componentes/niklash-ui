@@ -12,6 +12,7 @@
   label {
     display: block;
     margin-bottom: 5px;
+    color: #0e4675;
   }
   input[type="text"],
   input[type="password"] {
