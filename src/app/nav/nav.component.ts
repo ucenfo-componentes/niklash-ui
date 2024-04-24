@@ -13,8 +13,10 @@ import { RouterModule } from '@angular/router';
   template: `
   <nav>
     <a class="navbar-brand" routerLink="/">Niklash</a>
-    <input type="text" placeholder="Tipo de Accesorio">
-    <button class="primary" type="button">Buscar</button>
+    <div class="search-container">
+        <input type="text" placeholder="Tipo de Accesorio" class="search-input">
+        <button class="primary" type="button">Buscar</button>
+    </div>
     <ul>
     <li><a routerLink="/login">Login</a></li>
     <li><a routerLink="/registro">Registrarse</a></li>

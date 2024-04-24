@@ -3,20 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ApiService } from '../services/api.service'; 
 import { HttpClientModule } from '@angular/common/http';
-
-interface Address {
-  provincia: string;
-  canton: string;
-  distrito: string;
-  otrasSenas: string;
-}
-
-export interface User {
-  name: string;
-  email: string;
-  password: string;
-  address: Address;
-}
+import { User } from '../models/usuario.model';
 
 @Component({
   selector: 'app-registro',
@@ -30,32 +17,25 @@ export interface User {
   styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
-  // Initialize user with detailed address structure
   user: User = {
     name: '',
     email: '',
     password: '',
-    address: {
-      provincia: '',
-      canton: '',
-      distrito: '',
-      otrasSenas: ''
-    }
-    
+    address: ''    
   };
 
-  provincias = ['San Jose ', 'Alajuela ', 'Heredia ', 'Cartago ', 'Guanacaste ', 'Puntarenas ', 'Limon '];
-  
   constructor(private apiService: ApiService) {}
 
   onRegister(): void {
     
     this.apiService.registerUser(this.user).subscribe({
       next: (response) => {
+        console.log(this.user);
         console.log('User registered successfully', response);
         window.alert('registro exitoso!!');
       },
       error: (error) => {
+        console.log(this.user);
         console.error('There was an error registering the user', error);
         window.alert('registro error!!');
       }

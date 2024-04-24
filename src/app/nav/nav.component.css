@@ -37,6 +37,18 @@
     overflow: hidden;
     display: flex;
   }
+
+  .search-container {
+    display: flex;
+    align-items: center; /* Aligns the items vertically in the center */
+  }
+
+.search-input {
+    flex-grow: 1; /* Makes the input field take up the available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none; /* Removes the right border to blend with the button */
+  }
   
   li {
     float: left;
