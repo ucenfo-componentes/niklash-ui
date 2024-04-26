@@ -9,14 +9,14 @@ import { User } from '../models/usuario.model';
   providedIn: 'root'
 })
 export class ApiService {
-  private baseUrl = 'https://nicklashregistrarusuario.azurewebsites.net';
+  private baseUrl = 'http://localhost:7071/api/registrarUsuario';
 
   httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
 
   constructor(private http: HttpClient) {}
 
   registerUser(user: User): Observable<any> {
-    return this.http.post(`${this.baseUrl}`, user, { headers: this.httpHeaders }).pipe(
+    return this.http.post(this.baseUrl, user, { headers: this.httpHeaders }).pipe(
       catchError(this.handleError)
     );
   }
